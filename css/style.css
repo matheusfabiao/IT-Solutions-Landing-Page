@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+li{
+    list-style: none;
+}
+
+.btn{
+    display: inline-block;
+    padding: 15px 60px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    background-color: #111;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background .5s ease;
+}
+
+.btn:hover{
+    background-color: #000;
+}
+
+.headline{
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 50px;
+    letter-spacing: 2px;
+}
+
+/* NAVBAR */
+#navbar{
+    width: 100%;
+    background-color: #111;
+    color: #fff;
+    height: 80px;
+    position: fixed;
+}
+
+#navbar-container{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 2rem;
+}
+
+#navbar-items{
+    display: flex;
+    text-transform: uppercase;
+}
+
+#navbar-items li{
+    padding: 10px;
+}
+
+/* SHOWCASE */
+#showcase{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-image: url(/img/showcase.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .5);
+    background-blend-mode: color;
+}
+
+#showcase-container{
+    text-align: center;
+}
+
+#showcase-container h2{
+    font-size: 2.5rem;
+}
+
+#showcase-container p{
+    font-size: 1.2rem;
+    padding: 7px 0;
+}
+
+/* CLIENTS */
+#clients{
+    width: 100%;
+    background-color: #eee;
+    color: #111;
+    padding: 50px;
+}
+
+#clients-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    padding: 15px;
+}
+
+.client{
+    display: inline-block;
+    width: 25%;
+}
+
+/* ABOUT */
+#features{
+    width: 100%;
+    background-color: #222;
+    color: #fff;
+    padding: 50px;
+}
+
+#features-container{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+}
+
+.feature{
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* PRODUCT */
+#product{
+    width: 100%;
+    padding: 50px;
+}
+
+#product-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#items{
+    width: 650px;
+}
+
+#items .item{
+    display: flex;
+    padding: 10px;
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+
+/* TESTIMONIALS */
+#testimonials {
+    width: 100%;
+    background-color: #222;
+    color: #fff;
+    padding: 50px;
+}
+
+#testimonials-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: #333;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+.testimonial .testimonial-img{
+    width: auto;
+    height: 200px;
+    border-radius: 50%;
+    margin: 15px;
+}
+
+/* GALLERY */
+#gallery{
+    width: 90%;
+    margin: auto;
+    padding: 50px;
+}
+
+#gallery-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    justify-items: center;
+}
+
+.gallery-img{
+    display: inline-block;
+    width: 540px;
+    height: 360px;
+    border-radius: 5px;
+}
+
+/* FOOTER */
+#footer{
+    background-color: #222;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+}
